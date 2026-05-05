@@ -61,7 +61,7 @@ class TaskStats extends BaseWidget
             Stat::make('Tugas Pending', Task::where('user_id', $userId)->where('status', 'pending')->count())
                 ->description('Tugas yang harus diselesaikan')
                 ->descriptionIcon('heroicon-m-clock')
-                ->color('warning')
+                ->color('red maroon')
                 ->chart([7, 3, 4, 5, 6, 3, 5, 3]), // Trik UI: Menambahkan grafik statis agar terlihat keren
 
             // Kotak 3: Tugas Selesai (Completed)
